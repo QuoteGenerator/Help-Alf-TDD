@@ -18,4 +18,12 @@ describe('Find SpaceShip', function() {
 		expect(spaceShipFinder.add(MAP)).toEqual([2,0]);
 	});
 
+	it('should return Coordinates "[3,4]" for a multi line Map-string with 1 X in the Map', function() {
+
+		const line = ".....";
+		let MAP = line + line + ".X..." + line
+
+		expect(spaceShipFinder.add(MAP)).toEqual([2,1]);
+	});
+
 });
