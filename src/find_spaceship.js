@@ -2,14 +2,20 @@
 function FindSpaceShip() {}
 FindSpaceShip.prototype.add = function(galaxyMap) {
 
-	const mapArray = galaxyMap.split("");
-	console.log(mapArray);
+	if(galaxyMap == "") {return "NO SPACE!"}
+	if(!galaxyMap.includes('X')) {return "Spaceship lost forever"}
+	
+	const mapArray = galaxyMap.split("\n");
+	mapArray.reverse();
 
-	for(let i = 0; i < mapArray.length; i++){
-		if(mapArray[i] == 'X'){
-			return [i, 0];
+	for(let y = 0; y < mapArray.length; y++){
+		for(let x = 0; x < mapArray[y].length; x++){
+			if(mapArray[y][x] == "X"){
+				console.log(mapArray)
+				return [x, y];
+			}
 		}
 	}
-
-	return galaxyMap == "" ? "NO SPACE!" : "Spaceship lost forever";
+	
+	
 };
