@@ -8,7 +8,7 @@ describe('Find SpaceShip', function() {
 		expect(spaceShipFinder.add(MAP)).toEqual("NO SPACE!");
 	});
 
-	it('should return "" for an empty string', function() {
+	it('should return "Spaceship lost forever" for an empty string', function() {
 		let MAP = ".....";
 		expect(spaceShipFinder.add(MAP)).toEqual("Spaceship lost forever");
 	});
