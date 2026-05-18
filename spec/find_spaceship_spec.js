@@ -18,7 +18,7 @@ describe('Find SpaceShip', function() {
 		expect(spaceShipFinder.add(MAP)).toEqual([2,0]);
 	});
 
-	it('should return Coordinates "[1,3]" for a multi line Map-string with 1 X in the Map', function() {
+	it('should return Coordinates "[1,1]" for a multi line Map-string with 1 X in the Map', function() {
 
 		const line = ".....\n";
 		const lineWithX = ".X...\n"
