@@ -5,6 +5,6 @@ describe('Find SpaceShip', function() {
 
 	it('should return "NO SPACE" for an empty string', function() {
 		let MAP = "";
-		expect(FindSpaceShip.add(MAP)).toEqual("NO SPACE");
+		expect(FindSpaceShip.add(MAP)).toEqual("NO SPACE!");
 	});
 });
