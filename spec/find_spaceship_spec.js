@@ -3,7 +3,8 @@ describe('Find SpaceShip', function() {
 		FindSpaceShip = new FindSpaceShip();
 	});
 
-	it('should return 0 for an empty string', function() {
-		expect(FindSpaceShip.add('')).toEqual(0);
+	it('should return "NO SPACE" for an empty string', function() {
+		let MAP = "";
+		expect(FindSpaceShip.add(MAP)).toEqual("NO SPACE");
 	});
 });
