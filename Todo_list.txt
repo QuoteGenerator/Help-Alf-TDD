@@ -1,0 +1,12 @@
+1.) Create Test Case, for when there is no Spaceship, 
+then it should return "Spaceship lost forever"
+
+2.) Create Test Case, for when there is a Spaceship, 
+in the most top line (one line space)
+
+3.) Create Test Case, for when there is a Spaceship, 
+anywhere in the Space (multi line space) and then it should return the Coordinates
+
+4.) Create Test Case, for when there is no Space,
+then it should return "No Space"
+
